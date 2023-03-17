@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Oswald";
+}
+
+body {
+  background: #151515;
+}
+
+html {
+  color: aquamarine;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: #ffffff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #0dcaf0;
+}
+
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/h2.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+#home .contenido header {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+#home .contenido header .contenido-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+#home .contenido header .contenido-header h1 {
+  color: #0dcaf0;
+}
+
+#home .contenido header .contenido-header nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home .contenido header .contenido-header nav .links a {
+  color: #fff;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+#home .contenido header .contenido-header nav .links a:hover {
+  color: rgb(103, 202, 202);
+}
+
+#home .contenido header .contenido-header #icono-nav {
+  color: #ffffff;
+  display: none;
+}
+
+#home .contenido header .contenido-header .redes i {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+#home .contenido header .contenido-header .redes i:hover {
+  color: rgb(103, 202, 202);
+}
+
+#home .contenido .presentacion {
+  max-width: 600px;
+  *max-width: 1100px;
+  height: 100vh;
+  *left: 0;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  *align-items: center; /*DE ESTA FORMA DEJO EL DIV DEL TEXTO A LA IZQUIERDA COMO ME GUSTA */
+  justify-content: center;
+}
+
+#home .contenido .presentacion .bienvenida {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  *margin-bottom: 10px;
+}
+
+#home .contenido .presentacion h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#home .contenido .presentacion span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0dcaf0;
+  *color: rgb(61, 226, 163);
+}
+
+#home .contenido .presentacion .descripcion {
+  font-size: 16px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#home .contenido .presentacion a {
+  width: 160px;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid rgb(61, 226, 163);
+  color: rgb(61, 226, 163);
+  border-radius: 50px;
+  text-align: center;
+}
+
+#home .contenido .presentacion a:hover {
+  color: aqua;
+  border: 2px solid aqua;
+}
+
+/*-SECCIÓN SOBRE MI PAPI-------------------------------------------------------*/
+
+#sobremi {
+  *max-width: 90%;
+  max-width: 1100px;
+  padding: 100px 15px;
+  margin: auto;
+  display: flex;
+}
+
+#sobremi .caja-img1 {
+  width: 380px;
+  *margin-left: 80px;
+  margin-right: 80px;
+}
+
+#sobremi .caja-img1 img {
+  *padding: 20px;
+  *width: 100%;
+  width: 380px;
+  *box-shadow: 0px 0px 18px aqua;
+  *box-shadow: 0 0 15px white;
+
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  *height: 350px;
+}
+
+#sobremi .caja-img1 img:hover {
+  transform: scale(1.1);
+}
+
+#sobremi .sobremi {
+  margin: 0 40px;
+}
+
+#sobremi .sobremi .title1 {
+  color: #0dcaf0;
+  *color: aqua;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #0dcaf0;
+  text-decoration-thickness: 4px;
+}
+
+#sobremi .sobremi .name {
+  font-size: 22px;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+
+#sobremi .sobremi span {
+  color: #0dcaf0;
+}
+
+#sobremi .sobremi .description {
+  color: #0dcaf0;
+  *margin: 20px 0;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+#sobremi .sobremi .sub-title {
+  *color: rgb(103, 202, 202);
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#sobremi .sobremi .sub-title2 {
+  *color: rgb(103, 202, 202);
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#sobremi .sobremi a {
+  display: inline-block;
+  border: 2px solid #0dcaf0;
+  color: #0dcaf0;
+  font-size: 16px;
+  padding: 10px 18px;
+
+  border-radius: 50px;
+  text-align: center;
+}
+
+#sobremi .sobremi a:hover {
+  color: rgb(103, 179, 202);
+  *color: #8a8a8a;
+  border: 2px solid #0dcaf0;
+}
+
+/*SECCIÓN SERVICIOS ÑIÑO----------------------------------------------------------------*/
+
+#servicios {
+  padding: 100px 15px;
+  text-align: center;
+  *background: #f3f3f3;
+}
+
+#servicios .title-section {
+  color: #0dcaf0;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #0dcaf0;
+  text-decoration-thickness: 4px;
+}
+
+#servicios .fila {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+#servicios .fila .servicio {
+  max-width: 350px;
+  background: #101010;
+  padding: 30px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+#servicios .fila .servicio:hover {
+  box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#servicios .fila .servicio h4 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#servicios .fila .servicio i {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  color: #0dcaf0;
+  background: #2d2e37;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+#servicios .fila .servicio hr {
+  width: 30%;
+  margin: auto;
+  color: #6e4a4a;
+  margin-bottom: 25px;
+}
+
+#servicios .fila .servicio h4 {
+  color: #0dcaf0;
+}
+
+#servicios .fila .servicio ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#servicios .fila .servicio ul li {
+  color: #0dcaf0;
+}
+
+#servicios .fila .servicio p {
+  color: #565656;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+/*SECCIÓN PORTAFOLIO ÑIÑOS----------------------------------------------------------------*/
+
+#portafolio {
+  max-width: 1100px;
+  padding: 100px 0;
+  margin: auto;
+}
+
+#portafolio .title-section {
+  text-align: center;
+  color: #0dcaf0;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #0dcaf0;
+  text-decoration-thickness: 4px;
+}
+
+#portafolio .fila {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+#portafolio .fila .proyecto {
+  max-width: 450px;
+  *height: 250px;
+  border: 1px solid #0dcaf0;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#portafolio .fila .proyecto img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+#portafolio .fila .proyecto:hover img {
+  filter: grayscale(0);
+}
+
+#portafolio .fila .proyecto .info {
+  position: absolute;
+  left: 0;
+  color: #0dcaf0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 2px;
+  bottom: -40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#portafolio .fila .proyecto:hover .info {
+  opacity: 1;
+  bottom: 0;
+}
+
+#portafolio .fila .proyecto .info p {
+  color: #0dcaf0;
+}
+
+/*SECCIÓN FOOTER BEBES ----------------------------------------------------------------*/
+
+footer {
+  text-align: center;
+  background: #101010;
+  color: aqua;
+  padding: 30px 0;
+}
+
+footer a {
+  color: aqua;
+  display: inline-block;
+  margin: 5px;
+  font-size: 26px;
+}
+
+footer a:hover {
+  color: #0dcaf0;
+}
+
+/*RESPONSIVE PAPI----------------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+  .redes-footer {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.responsive {
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+
+  #home .contenido header .contenido-header #icono-nav {
+    display: block;
+  }
+
+  #icono-nav {
+    display: block;
+  }
+
+  #home .contenido .presentacion h2 {
+    font-size: 30px;
+  }
+
+  #sobremi {
+    padding: 50px 0;
+    display: block;
+  }
+
+  #sobremi .caja-img1 {
+    width: 200px;
+    margin: auto;
+  }
+
+  #sobremi .caja-img1 img {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  #sobremi .sobremi h2 {
+    text-align: center;
+  }
+
+  #sobremi .sobremi .name {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #servicios {
+    padding: 50px 15px;
+  }
+
+  #servicios .fila {
+    display: block;
+  }
+
+  #servicios .fila .servicio {
+    margin: 10px auto;
+  }
+
+  #portafolio {
+    padding: 50px 0;
+  }
+
+  #portafolio .fila {
+    display: block;
+  }
+
+  #portafolio .fila .proyecto {
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 526px) {
+  #portafolio .fila .proyecto {
+    margin: 15px 20px;
+  }
+
+  #portafolio .fila .proyecto .info {
+    padding: 0.5px;
+  }
+
+  #portafolio .fila .proyecto .info h4 {
+    font-size: 14px;
+  }
+
+  #portafolio .fila .proyecto .info p {
+    font-size: 15px;
+  }
+}
